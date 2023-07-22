@@ -2,6 +2,11 @@
 <html>
 <head>
 <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le7XEQnAAAAAOHQTPL4EgOU5qqomkPYU5DybUib"></script>
+  <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+</script>
   <title>reCAPTCHAテスト</title>
 </head>
 <body>
@@ -18,5 +23,9 @@ function onClick(e) {
   });
 }
 </script>
+  <button class="g-recaptcha"
+data-sitekey="6Le7XEQnAAAAAOHQTPL4EgOU5qqomkPYU5DybUib"
+data-callback='onSubmit'
+data-action='submit'>Submit</button>
 </body>
 </html>
