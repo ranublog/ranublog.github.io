@@ -7,11 +7,7 @@
      document.getElementById("demo-form").submit();
    }
 </script>
-  <title>reCAPTCHAテスト</title>
-</head>
-<body>
-  <h1>reCAPTCHAテスト</h1>
-<script>
+  <script>
 function onClick(e) {
   e.preventDefault();
   grecaptcha.enterprise.ready(async () => {
@@ -23,6 +19,10 @@ function onClick(e) {
   });
 }
 </script>
+  <title>reCAPTCHAテスト</title>
+</head>
+<body>
+  <h1>reCAPTCHAテスト</h1>
   <button class="g-recaptcha"
 data-sitekey="6Le7XEQnAAAAAOHQTPL4EgOU5qqomkPYU5DybUib"
 data-callback='onSubmit'
